@@ -15,3 +15,4 @@ senha VARCHAR (8)
 );
 INSERT INTO usuarios (email,senha)
        VALUES ('ja1marcelo@hotmail.com','12345');
+TRUNCATE TABLE // comando excluiu a tabela de usuários 
