@@ -35,3 +35,11 @@ CREATE TABLE pessoas
      numero DECIMAL(10,4) // só no decimal conseguimos fazer essa definição 
 INSERT INTO pessoas(numero) VALUES(123456.7891);
 DROP TABLE pessoas;
+
+*para texto
+CREATE TABLE pessoas
+(
+     texto TINYTEXT
+);
+INSERT INTO pessoas (texto) VALUES ('teste');
+DROP TABLE;
