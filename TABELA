@@ -17,7 +17,21 @@ INSERT INTO usuarios (email,senha)
        VALUES ('ja1marcelo@hotmail.com','12345');
 TRUNCATE TABLE // comando excluiu a tabela de usuários 
 
+*/CREATE TABLE pessoas
+(
+     numero INT
+INSERT INTO  pessoas (numero)  VALUES (127);
+DROP TABLE pessoas; /*
+
 CREATE TABLE pessoas
 (
-     numero TINYINT
-INSERT INTO  pessoas (numero)  VALUES (127)
+     numero DOUBLE
+);
+INSERT INTO  pessoas (numero)  VALUES (123.25);   // para numeros com casas decimais onde podemos usar também o FLOAT
+DROP TABLE pessoas;
+
+CREATE TABLE pessoas
+(
+     numero DECIMAL(10,4) // só no decimal conseguimos fazer essa definição 
+INSERT INTO pessoas(numero) VALUES(123456.7891);
+DROP TABLE pessoas;
