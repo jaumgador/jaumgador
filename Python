@@ -21,3 +21,21 @@ a2
 
  def executar:
    print()   // sempre cuiadr com espaços 
+ * sites para executar codigos online : repl it 
+para comentários se usa # em linhas 
+coemntários em frases usa se """ tres aspas
+
+ex usando comentários:
+def executar():
+  salario = 1000
+  desconto = 200
+  """" o desconto é multiplicado por 2 em 
+  razão das faltas contabilizadas, tendo mais 
+  de 3 faltas o desconto é dobrado """
+  
+  total = salaro - (2 * desconto)
+ 
+  print("codigo python") 
+
+
+executar()
