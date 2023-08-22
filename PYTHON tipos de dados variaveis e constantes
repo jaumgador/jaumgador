@@ -15,3 +15,16 @@ print(1 + 3) #int
 print("joao")
 print('tambem texto')
 print("joao","ana","maria") #ex de lista 
+
+
+idade = 32
+idade = "joao"
+print (idade)## python já sabe  os valores das variavéis
+
+altura = 1.93
+peso = 110
+
+
+imc = peso / (altura * altura)
+PI = 3.14 # PI em maiusculo é uma constante
+print(PI)
