@@ -33,7 +33,7 @@ def executar():
   razão das faltas contabilizadas, tendo mais 
   de 3 faltas o desconto é dobrado """
   
-  total = salaro - (2 * desconto)
+  total = salario - (2 * desconto)
  
   print("codigo python") 
 
