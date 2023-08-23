@@ -41,3 +41,13 @@ i ++; //incremento da variavel i
 while (i < 5) { // enquanto i for menor que 5
 } // fim do método 
   } // fim da classe da classe
+
+
+
+class FOR{
+ public static void main (String[] args) {
+ for (i = 0; i < 5 ; i++) { // ordem crescente de 0 à 5
+System.out.println (i) ; 
+}
+} // exibirá o resultado da variavel i de 0 à 5 , tal como 0,1,2,3,4.
+
