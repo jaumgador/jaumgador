@@ -9,7 +9,7 @@ jaumgador/jaumgador is a ✨ special ✨ repository because its `README.md` (thi
 You can click the Preview link to take a look at your changes.
 --->
 * FLUXO DE REPETIÇÃO
-*UTILIZAÇÃO DO WHILE (ENQUANTO)
+*UTILIZAÇÃO  WHILE (ENQUANTO)
 
 import java.util.arraylist;
 // importamosa classe arraylist para poder fazer uso do vetor e armazenar elementos
@@ -22,5 +22,22 @@ int i = 0; // a variavel i recebe o valor zero
 While (i < 2) { // enquanto i for menor que 2
 System.out.println (i) ; imprima val0or de i
 i ++; //incremento da variavel i 
+} // fim do método 
+  } // fim da classe da classe
+
+*UTILIZAÇÃO DO...WHILE 
+
+import java.util.arraylist;
+// importamosa classe arraylist para poder fazer uso do vetor e armazenar elementos
+public class doWhile {
+/* metodo principal de classe*/
+ public static void main (String[] args) {
+//fluxo de repetição usando while 
+int i = 3; // a variavel i recebe o valor três
+do {
+System.out.println (i) ; imprima val0or de i
+i ++; //incremento da variavel i 
+}
+while (i < 5) { // enquanto i for menor que 5
 } // fim do método 
   } // fim da classe da classe
