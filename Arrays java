@@ -1,0 +1,49 @@
+- 👋 Hi, I’m @jaumgador
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+
+ public class Array simples {
+      public static void main (String [] args ) {
+         String[] paises = {"BRASIL", "RUSSIA", "INDIA" , "CHINA"};
+      System.out.println(paises[0] );
+
+Podemos utilizar a classe “java.util.Arrays”, mas que não faz parte do pacote "lang" do Java. Desse modo, devemos importá-la utilizando o comando “import java.util.Arrays”, para que seja possível aplicar os recursos do exemplo.
+
+ public class Array simples {
+      public static void main (String [] args ) {
+         String[] paises = {"BRASIL", "RUSSIA", "INDIA" , "CHINA"};
+         System.out.println(paises[0] );(paises[0] );
+            System.out.println(Arrays.toString (paises))
+}
+}
+*/Nesta etapa dos seus estudos, você já pode imaginar que precisa realizar uma pesquisa no array. Esta pesquisa deverá retornar um país que compõe o array. Para tanto, utilize um objeto chamado “arrays”, com o método “binarySearch” para buscar o elemento.
+Em nosso caso, vamos buscar pelo país Brasil, inserido na lista países. Será, então, retornada a posição do elemento, conforme definido no método “binarySearch”, na coleção./*
+
+import.java.util.arrays
+
+ public class Array simples {
+      public static void main (String [] args ) {
+         String[] paises = {"BRASIL", "RUSSIA", "INDIA" , "CHINA"};
+         System.out.println(paises[0] );(paises[0] );
+            System.out.println(Arrays.toString (paises))
+      int posicao = Arrays.binarySeach (paises, "BRASIL")
+        System.out.println(posicao)
+}
+}
+
+*/Igualmente, será possível ordenar o array utilizando a classe “Arrays.sort()”. Observe a próxima imagem para entender o processo. /*
+
+import.java.util.arrays
+
+ public class Array simples {
+      public static void main (String [] args ) {
+         String[] paises = {"BRASIL", "RUSSIA", "INDIA" , "CHINA"};
+         System.out.println(paises[0] );(paises[0] );
+            System.out.println(Arrays.toString (paises))
+      int posicao = Arrays.binarySeach (paises, "BRASIL")
+        System.out.println(posicao)
+    Arrays.sort (paises, 0, posicao. lenght); // ordena o nosso array iniciando em zero 
+    System.out.println(Arrays.toString (paises)); // imprime o resultado na tela 
+
+
+
