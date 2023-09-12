@@ -1,0 +1,55 @@
+E- 👋 Hi, I’m @jaumgador
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+
+<!---
+jaumgador/jaumgador is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+import javax.swing.*;
+import javax.swing.plaf.basic.BasicSplitPaneUI;
+import java.awt.*;
+
+public class Tela {public static void main(String[] args) {
+    // crio uma instância do JFrame
+    JFrame frame = new JFrame("FutyFC23");
+
+    // crio um rótulo com a mensagem e add no centro junto com a fonte
+     JLabel label = new JLabel("Seja bem-vindo ao FutyFC23!");
+     label.setHorizontalAlignment(SwingConstants.CENTER); // centraliza a escrita
+     label.setFont(new Font("Arial",Font.ITALIC, 40));
+
+    // adiciono o rótulo ao conteúdo do JFrame
+    frame.getContentPane().add(label);
+
+    // configuro o tamanho da janela
+    frame.setSize(800, 500);
+
+    // configuro a operação padrão de fechamento da janela
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+
+
+    // centralizo a janela na tela
+    frame.setLocationRelativeTo(null);
+
+    // torno a janela visível
+    frame.setVisible(true);
+
+    JButton jButton = new JButton("Iniciar");
+    jButton.setAlignmentX(Component.CENTER_ALIGNMENT); // para centrlizar o botão
+    JPanel panel = new JPanel();
+    panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+    panel.add(Box.createGlue());
+    panel.add(label);
+    panel.add(Box.createRigidArea(new Dimension(230,100)));
+    panel.add(jButton);
+    panel.add(Box.createVerticalGlue());
+    frame.getContentPane().add(panel);
+
+    frame.setVisible(true);
+
+}
+}
