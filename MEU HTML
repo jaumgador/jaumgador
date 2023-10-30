@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à minha página!</h1>
+    </header>
+    <main>
+        <h2>Sobre mim</h2>
+        <p>Olá! Meu nome é João Marcelo e eu sou um desenvolvedor.</p>
+    </main>
+    <footer>
+        <p>Contato: ja1marcelo@hotmail.com</p>
+    </footer>
+</body>
+</html>
