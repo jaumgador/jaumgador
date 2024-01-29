@@ -1,0 +1,26 @@
+package exercicios;
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exe {
+	 public static void main(String[] args) {
+	       
+	        String dataInicioStr = "2024-01-20";
+	        String dataFimStr = "2034-01-20";
+
+	       
+	        LocalDate dataInicio = LocalDate.parse(dataInicioStr);
+	        LocalDate dataFim = LocalDate.parse(dataFimStr);
+
+	        
+	        Period periodo = Period.between(dataInicio, dataFim);
+
+	        int mesesTotais = periodo.getYears() * 12 + periodo.getMonths();
+
+	       
+	        System.out.println("O número de meses entre as datas é: " + mesesTotais);
+	    }
+}
