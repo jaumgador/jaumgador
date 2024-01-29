@@ -1,0 +1,50 @@
+
+public class exe {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+     
+        int[] numerosSelecionados = obterNumerosSelecionados(scanner);
+
+       
+        int[] numerosSorteados = sortearNumeros();
+
+  
+        int quantidadeAcertos = contarAcertos(numerosSelecionados, numerosSorteados);
+
+       
+        System.out.println("Números selecionados: " + Arrays.toString(numerosSelecionados));
+        System.out.println("Números sorteados: " + Arrays.toString(numerosSorteados));
+        System.out.println("Quantidade de acertos: " + quantidadeAcertos);
+    }
+
+    private static int[] obterNumerosSelecionados(Scanner scanner) {
+        System.out.println("Digite seus números selecionados separados por espaço:");
+        String[] input = scanner.nextLine().split("\\s+");
+        int[] numerosSelecionados = new int[input.length];
+
+        for (int i = 0; i < input.length; i++) {
+            numerosSelecionados[i] = Integer.parseInt(input[i]);
+        }
+
+        return numerosSelecionados;
+    }
+
+    private static int[] sortearNumeros() {
+        
+        int[] numerosSorteados = {1,5,7,8,9,11,12,13,14,16,17,19,21,23,24};
+        return numerosSorteados;
+    }
+
+    private static int contarAcertos(int[] numerosSelecionados, int[] numerosSorteados) {
+        int quantidadeAcertos = 0;
+
+        for (int numero : numerosSelecionados) {
+            if (Arrays.binarySearch(numerosSorteados, numero) >= 0) {
+                quantidadeAcertos++;
+            }
+        }
+
+        return quantidadeAcertos;
+    }
+}
